@@ -13,7 +13,13 @@
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
 	
-	
+	<jsp-config>
+		<jsp-property-group>
+			<url-pattern>*.jsp</url-pattern>
+			<include-prelude>/WEB-INF/classes/header.inc</include-prelude>
+			<include-coda>/WEB-INF/classes/footer.inc</include-coda>
+		</jsp-property-group>
+	</jsp-config>
 	<error-page>
 		<error-code>404</error-code>
 		<location>/error404.jsp</location>
