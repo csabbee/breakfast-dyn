@@ -1,11 +1,10 @@
 package com.eggs.domain;
 
-public class Food {
+public class Food implements Comparable<Food>{
 
     private String id;
     private String name;
     private float price;
-    
     
     public String getId() {
         return id;
@@ -28,5 +27,10 @@ public class Food {
     @Override
     public String toString() {
         return "Food [id=" + id + ", name=" + name + ", price=" + price + "]";
+    }
+    @Override
+    public int compareTo(Food o) {
+        if(this.equals(o)) return 0;
+        else return this.id.compareTo(o.id);
     }
 }
