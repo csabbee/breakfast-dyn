@@ -1,0 +1,7 @@
+<%@page import="com.eggs.domain.Food"%>
+<jsp:useBean id="foods" class="java.util.TreeMap" scope="application" />
+
+<%
+foods.remove(request.getParameter("foodid"));
+response.sendRedirect("listfood.jsp");
+%>
