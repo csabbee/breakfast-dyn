@@ -1,6 +1,6 @@
 <%@ taglib tagdir="/WEB-INF/tags" prefix="b" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 
 
 <c:url value="/" var="baseUrl"></c:url>
@@ -19,7 +19,6 @@
 	<!-- Bootstrap core CSS -->
 	<!-- slate,united,yeti,simplex,readable,amelia,cerulean,cosmo,cyborg,flatly,journal  -->
     <link href="http://netdna.bootstrapcdn.com/bootswatch/3.0.2/slate/bootstrap.min.css" rel="stylesheet">
-
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -44,7 +43,8 @@
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
-        <li><a href="${baseUrl}addfood.jsp">Add food</a></li>
+        <li><a href="${baseUrl}addfood.jsp">Add Food</a></li>
+        <li><a href="${baseUrl}listfood.jsp">List Food</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>

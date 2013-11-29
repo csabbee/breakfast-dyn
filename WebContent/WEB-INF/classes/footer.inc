@@ -1,7 +1,7 @@
 	</div>
 	</div>
       <footer>
-        <p>&copy; Company 2013</p>
+        <p><span class="glyphicon glyphicon-copyright-mark"></span> Company 2013</p>
       </footer>
     </div> <!-- /container -->
 
