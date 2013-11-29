@@ -1,0 +1,16 @@
+<%@page import="com.eggs.domain.Food"%>
+<jsp:useBean id="foods" class="java.util.TreeMap" scope="application" />
+<%
+if ("post".equalsIgnoreCase(request.getMethod())) {
+    String id = request.getParameter("id");
+    String name = request.getParameter("name");
+    String price = request.getParameter("price");
+    Food food = new Food();
+    food.setId(id);
+    food.setName(name);
+    food.setPrice(Float.parseFloat(price));
+    foods.put(food.getId(), food);
+    session.setAttribute("food", food);
+    response.sendRedirect("addfood.jsp");
+}
+%>
