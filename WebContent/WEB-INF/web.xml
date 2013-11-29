@@ -16,6 +16,7 @@
 	<jsp-config>
 		<jsp-property-group>
 			<url-pattern>*.jsp</url-pattern>
+			<url-pattern>*.jspf</url-pattern>
 			<include-prelude>/WEB-INF/classes/header.inc</include-prelude>
 			<include-coda>/WEB-INF/classes/footer.inc</include-coda>
 		</jsp-property-group>
