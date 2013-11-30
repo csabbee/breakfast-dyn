@@ -27,8 +27,8 @@
     <![endif]-->
   </head>
 
-  <body>
-  <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+<body>
+ <header class="navbar navbar-inverse navbar-static-top bs-docs-nav" role="banner">
   <div class="container">
     <div class="navbar-header">
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
@@ -48,8 +48,6 @@
     </nav>
   </div>
 </header>
-
-
     <div class="container">
     <div class="row">
     <div class="col12">
