@@ -5,7 +5,7 @@
 			<th>ID</th>
 			<th>Name</th>
 			<th>Price</th>
-			<th>Action</th>
+			<th>Actions</th>
 		</tr>
 	</thead>
 	
@@ -23,8 +23,31 @@
 			<c:param name="foodprice" value="${next.value.price}"></c:param>
 		</c:url>
 		<td>
-			<a class="btn btn-small" href='${deleteUrl}'><span class="glyphicon glyphicon-remove-circle"></span></a>
-			<a class="btn btn-small" href='${editUrl}'><span class="glyphicon glyphicon-wrench"></span></a>
+		  <table>
+		    <tr>
+		    <td>
+		      <form action="delete.jspf" method="post">
+		   		<input type="hidden" class="form-control" value="${next.value.id}" name="foodid" readonly>
+				<button type="submit" class="btn btn-danger">
+					<span class="glyphicon glyphicon-minus-sign"></span>
+				</button>
+		      </form>
+		    </td>
+		    <td>
+		       <div class="col-md-8"></div>
+		    </td>
+		    <td>
+		      <form action="editfood.jsp" method="post">
+		   		<input type="hidden" class="form-control" value="${next.value.id}" name="foodid" readonly>
+		   		<input type="hidden" class="form-control" value="${next.value.name}" name="foodname" readonly>
+		   		<input type="hidden" class="form-control" value="${next.value.price}" name="foodprice" readonly>
+				<button type="submit" class="btn btn-warning">
+					<span class="glyphicon glyphicon-wrench"></span>
+				</button>
+		      </form>
+		    </td>
+		    </tr>
+		  </table>
 		</td>
 	</tr>
 	</c:forEach>
