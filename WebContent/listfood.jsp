@@ -1,4 +1,3 @@
-<h2>L</h2>
 <h2>List of foods</h2>
 <table class="table table-striped">
 	<thead>
