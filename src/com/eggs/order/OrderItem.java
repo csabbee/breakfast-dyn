@@ -1,9 +1,11 @@
 package com.eggs.order;
 
+import com.eggs.domain.Food;
+
 public class OrderItem implements Comparable<OrderItem>{
 
     private int quantity;
-    private String foodId;
+    private Food food;
 
     public int getQuantity() {
         return quantity;
@@ -11,15 +13,15 @@ public class OrderItem implements Comparable<OrderItem>{
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
-    public String getFoodId() {
-        return foodId;
+    public Food getFood() {
+        return food;
     }
-    public void setFoodId(String foodId) {
-        this.foodId = foodId;
+    public void setFood(Food food) {
+        this.food = food;
     }
     @Override
     public int compareTo(OrderItem o) {
         if(this.equals(o)) return 0;
-        else return this.foodId.compareTo(o.foodId); 
+        else return this.food.getId().compareTo(o.food.getId()); 
     }
 }
