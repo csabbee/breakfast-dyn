@@ -18,7 +18,7 @@
     
 	<!-- Bootstrap core CSS -->
 	<!-- slate,united,yeti,simplex,readable,amelia,cerulean,cosmo,cyborg,flatly,journal  -->
-    <link href="http://netdna.bootstrapcdn.com/bootswatch/3.0.2/cyborg/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/bootswatch/3.0.2/readable/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -28,8 +28,6 @@
   </head>
 
   <body>
-  
-  
   <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
   <div class="container">
     <div class="navbar-header">
@@ -39,7 +37,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="http://glyphicons.com/" class="navbar-brand glyphicon glyphicon-home">Glyphicons</a>
+      <a href="http://glyphicons.com/" class="navbar-brand">Glyphicons</a>
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
@@ -50,6 +48,7 @@
     </nav>
   </div>
 </header>
+
 
     <div class="container">
     <div class="row">
