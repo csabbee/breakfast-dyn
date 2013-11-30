@@ -6,7 +6,6 @@
 <jsp:setProperty name="food" property="*" />
 
 
-<h2>Food</h2>
 <h2>Add new food</h2>
 <div class="row">
 	<div class="col-md-6">
@@ -15,11 +14,13 @@
 			<b:field name="name" />
 			<b:field name="price" />
 			<div class="col-md-3">
-			<button type="submit" class="btn btn-success btn-block">add</button>
+			<button type="submit" class="btn btn-success btn-block">
+			    <span class="glyphicon glyphicon-plus"></span>
+			</button>
 			</div>
 		</form>
 	</div>
-	<div class="col-md-2 alert alert-success">
+	<div class="col-md-3 alert alert-success">
 		<table class="table">
 			<tbody>
 				<tr class="success">
