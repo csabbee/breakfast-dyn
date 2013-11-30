@@ -1,5 +1,6 @@
 	</div>
 	</div>
+	<hr/>
       <footer>
         <p><span class="glyphicon glyphicon-copyright-mark"></span> Company 2013</p>
       </footer>
