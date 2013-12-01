@@ -1,0 +1,20 @@
+<%@page import="com.eggs.order.OrderItem"%>
+<%@page import="com.eggs.domain.Food"%>
+<jsp:useBean id="orderInstance" class="com.eggs.order.OrderInstance" scope="session"/>
+<jsp:useBean id="foods" class="java.util.TreeMap" scope="application"/>
+
+
+<%
+String id = request.getParameter("id");
+Food orderedFood = (Food)foods.get(id);
+if(!orderInstance.getOrderitems().containsKey(id)){
+    OrderItem orderitem = new OrderItem();
+    orderitem.setFood(orderedFood);
+    orderitem.setQuantity(1);
+    orderInstance.getOrderitems().put(id, orderitem);
+} else {
+    int quantity = orderInstance.getOrderitems().get(id).getQuantity();
+    orderInstance.getOrderitems().get(id).setQuantity(quantity + 1);
+}
+response.sendRedirect("order.jsp");
+%>
