@@ -44,6 +44,7 @@
         <li><a href="${baseUrl}addfood.jsp">Add Food</a></li>
         <li><a href="${baseUrl}listfood.jsp">List Food</a></li>
         <li><a href="${baseUrl}order.jsp">Order</a></li>
+        <li><a href="${baseUrl}listorders.jsp">List Orders</a></li>
       </ul>
     </nav>
   </div>
