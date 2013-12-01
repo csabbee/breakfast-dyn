@@ -1,0 +1,11 @@
+<%@page import="com.eggs.order.OrderInstance"%>
+<jsp:useBean id="orderInstance" class="com.eggs.order.OrderInstance" scope="session"/>
+<jsp:useBean id="orderRepository" class="com.eggs.order.OrderRepository" scope="application"/>
+<%
+if(!orderInstance.getOrderitems().isEmpty()){
+	orderRepository.addOrderInstance(orderInstance);
+	orderInstance = new OrderInstance();
+	session.setAttribute("orderInstance", orderInstance);
+}
+response.sendRedirect("order.jsp");
+%>
