@@ -6,7 +6,7 @@ import java.util.Map;
 public class OrderRepository {
     
     private Map<String, OrderInstance> orders = new HashMap<>();
-    private int id = 0;
+    private int id = 1;
     
     public void addOrderInstance(OrderInstance instance){
         orders.put(Integer.toString(id), instance);
@@ -21,7 +21,7 @@ public class OrderRepository {
             orders.remove(Integer.toString(i));
         }
         orders.remove(this.id);
-        if(this.id > 0) this.id--;
+        if(this.id > 1) this.id--;
     }
     public Map<String, OrderInstance> getOrderInstances(){
         Map<String, OrderInstance> orderInstances = new HashMap<>(orders);
