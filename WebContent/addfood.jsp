@@ -14,9 +14,9 @@
 			<b:field name="name" />
 			<b:field name="price" />
 			<div class="col-md-3">
-			<button type="submit" class="btn btn-success btn-block">
-			    <span class="glyphicon glyphicon-plus"></span>
-			</button>
+				<button type="submit" class="btn btn-success btn-block">
+			    	<span class="glyphicon glyphicon-plus"></span>
+				</button>
 			</div>
 		</form>
 	</div>
