@@ -59,7 +59,6 @@
 				<div align="center">
 				  <table>
 					<tr>
-						
 						<td>
 							<form action="deleteFoodFromOrder.jspf" method="post">
 								<input type="hidden" class="form-control" value="${next.value.food.id}" name="deleteid" readonly>

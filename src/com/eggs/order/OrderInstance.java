@@ -3,28 +3,12 @@ package com.eggs.order;
 import java.util.Map;
 import java.util.TreeMap;
 
-import com.eggs.domain.Address;
-
 public class OrderInstance {
 
-    private String customer;
-    private Address delivery;
     private int id;
     private Map<String, OrderItem> orderitems = new TreeMap<>();
     private float total;
-    
-    public String getCustomer() {
-        return customer;
-    }
-    public void setCustomer(String customer) {
-        this.customer = customer;
-    }
-    public Address getDelivery() {
-        return delivery;
-    }
-    public void setDelivery(Address delivery) {
-        this.delivery = delivery;
-    }
+
     public int getId() {
         return id;
     }
