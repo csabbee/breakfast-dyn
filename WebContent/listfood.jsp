@@ -5,7 +5,9 @@
 			<th>ID</th>
 			<th>Name</th>
 			<th>Price</th>
-			<th>Actions</th>
+			<th>
+				<div align="center">Actions</div>
+			</th>
 		</tr>
 	</thead>
 	
@@ -15,6 +17,7 @@
 		<td>${next.value.name}</td>
 		<td>${next.value.price}</td>
 		<td>
+		 <div align="center">
 		  <table>
 		    <tr>
 		    <td>
@@ -40,6 +43,7 @@
 		    </td>
 		    </tr>
 		  </table>
+		 </div>
 		</td>
 	  </tr>
 	</c:forEach>
