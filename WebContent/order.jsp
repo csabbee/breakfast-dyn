@@ -6,6 +6,9 @@
 				<th>ID</th>
 				<th>Name</th>
 				<th>Price</th>
+				<th>
+					<div align="center">Add to order</div>
+				</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -15,12 +18,14 @@
 					<td>${next.value.name}</td>
 					<td>${next.value.price} Ft</td>
 					<td>
+					 <div align="center">
 					  <form action="addFoodToOrder.jspf" method="post">
 		   				<input type="hidden" class="form-control" value="${next.value.id}" name="id" readonly>
 						<button type="submit" class="btn btn-success">
 					      <span class="glyphicon glyphicon-plus-sign"></span>
 					    </button>
 					  </form>
+					 </div>
 					</td>
 				</tr>
 			</c:forEach>
@@ -38,7 +43,9 @@
 			<th>Name</th>
 			<th>Price</th>
 			<th>Quantity</th>
-			<th>Action</th>
+			<th>
+				<div align="center">Actions</div>
+			</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -49,40 +56,43 @@
 				<td>${next.value.food.price} Ft</td>
 				<td>${next.value.quantity}</td>
 				<td>
-				<table>
-				<tr>
-				<td>
-				<form action="deleteFoodFromOrder.jspf" method="post">
-				  <input type="hidden" class="form-control" value="${next.value.food.id}" name="deleteid" readonly>
-				  <button type="submit" class="btn btn-warning" >
-				     <span class="glyphicon glyphicon-trash"></span>
-				  </button>
-				</form>
-				</td>
-				<td>
-	              <div class="col-md-8"></div>
-	            </td>
-				<td>
-				<form action="decreaseFoodQuantityInTheOrder.jspf" method="post">
-				  <input type="hidden" class="form-control" value="${next.value.food.id}" name="deleteid" readonly>
-				  <button type="submit" class="btn btn-danger" >
-				     <span class="glyphicon glyphicon-thumbs-down"></span>
-				  </button>
-				</form>
-				</td>
-				<td>
-	              <div class="col-md-8"></div>
-	    		</td>
-				<td>
-				<form action="increaseFoodQuantityInTheOrder.jspf" method="post">
-				  <input type="hidden" class="form-control" value="${next.value.food.id}" name="increaseid" readonly>
-				  <button type="submit" class="btn btn-success">
-				     <span class="glyphicon glyphicon-thumbs-up"></span>
-				  </button>
-				</form>
-				</td>
-				</tr>
-				</table>
+				<div align="center">
+				  <table>
+					<tr>
+						
+						<td>
+							<form action="deleteFoodFromOrder.jspf" method="post">
+								<input type="hidden" class="form-control" value="${next.value.food.id}" name="deleteid" readonly>
+								<button type="submit" class="btn btn-warning">
+									<span class="glyphicon glyphicon-trash"></span>
+								</button>
+							</form>
+						</td>
+						<td>
+							<div class="col-md-8"></div>
+						</td>
+						<td>
+							<form action="decreaseFoodQuantityInTheOrder.jspf" method="post">
+								<input type="hidden" class="form-control" value="${next.value.food.id}" name="deleteid" readonly>
+								<button type="submit" class="btn btn-danger">
+									<span class="glyphicon glyphicon-thumbs-down"></span>
+								</button>
+							</form>
+						</td>
+						<td>
+							<div class="col-md-8"></div>
+						</td>
+						<td>
+							<form action="increaseFoodQuantityInTheOrder.jspf" method="post">
+								<input type="hidden" class="form-control" value="${next.value.food.id}" name="increaseid" readonly>
+								<button type="submit" class="btn btn-success">
+									<span class="glyphicon glyphicon-thumbs-up"></span>
+								</button>
+							</form>
+						</td>
+					</tr>
+				  </table>
+				</div>
 				</td>
 			</tr>
 		</c:forEach>
@@ -96,7 +106,8 @@
 			</td>
 			<td>
 				<form action="checkOut.jspf" method="post">
-					<div class="col-md-6">
+					<div class="col-md-10" align="center">
+						<label>Check out</label>
 						<button type="submit" class="btn btn-success btn-lg">
 							<span class="glyphicon glyphicon-shopping-cart"></span>
 						</button>
