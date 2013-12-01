@@ -35,6 +35,9 @@ public class InitListener implements ServletContextListener {
             foods.put(food.getId(), food);
         }
         ctxEvent.getServletContext().setAttribute("foods", foods);
+        
+        String initYamlFile = ctxEvent.getServletContext().getInitParameter("YamlFile");
+        ctxEvent.getServletContext().getResourceAsStream("")
     }
 
 	/**
