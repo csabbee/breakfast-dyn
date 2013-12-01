@@ -8,7 +8,6 @@
 			<th>Actions</th>
 		</tr>
 	</thead>
-
 	<c:forEach items="${orderRepository.orders}" var="next">
 		<tr>
 			<td>${next.value.id}</td>
@@ -19,7 +18,7 @@
 			</td>
 			<td>${next.value.total} Ft</td>
 			<td>
-				<form action="deleteOrderFromRepository.jspf" method="post">
+				<form action="secret/deleteOrderFromRepository.jspf" method="post">
 					<input type="hidden" class="form-control" value="${next.value.id}" name="orderid" readonly>
 					<button type="submit" class="btn btn-danger">
 						<span class="glyphicon glyphicon-trash"></span>
