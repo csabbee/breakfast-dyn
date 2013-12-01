@@ -1,0 +1,8 @@
+<%@page import="com.eggs.order.OrderInstance"%>
+<jsp:useBean id="orderRepository" class="com.eggs.order.OrderRepository" scope="application"/>
+
+<%
+String orderId = request.getParameter("orderid");
+orderRepository.removeOrderInstance(orderId);
+response.sendRedirect("listorders.jsp"); 
+%>
