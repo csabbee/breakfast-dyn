@@ -13,6 +13,10 @@
     <param-name>Foods</param-name>
     <param-value>1_Mákos guba_750,2_Grilled cat_1140,3_Grilled gorilla_2500</param-value>
   </context-param>
+    <context-param>
+    <param-name>YamlFile</param-name>
+    <param-value>initfoods.yml</param-value>
+  </context-param>
   <jsp-config>
     <jsp-property-group>
       <url-pattern>*.jsp</url-pattern>
