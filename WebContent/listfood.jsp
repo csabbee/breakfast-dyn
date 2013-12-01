@@ -10,18 +10,10 @@
 	</thead>
 	
 	<c:forEach items="${foods}" var="next">
-	<tr>
+	  <tr>
 		<td>${next.value.id}</td>
 		<td>${next.value.name}</td>
 		<td>${next.value.price}</td>
-		<c:url value="delete.jspf" var="deleteUrl">
-		    <c:param name="foodid" value="${next.value.id}"></c:param>
-		</c:url>
-		<c:url value="editfood.jsp" var="editUrl">
-			<c:param name="foodid" value="${next.value.id}"></c:param>
-			<c:param name="foodname" value="${next.value.name}"></c:param>
-			<c:param name="foodprice" value="${next.value.price}"></c:param>
-		</c:url>
 		<td>
 		  <table>
 		    <tr>
@@ -49,6 +41,6 @@
 		    </tr>
 		  </table>
 		</td>
-	</tr>
+	  </tr>
 	</c:forEach>
 </table>
