@@ -1,0 +1,8 @@
+<jsp:useBean id="orderInstance" class="com.eggs.order.OrderInstance" scope="session" />
+
+<%
+String orderid = request.getParameter("increaseid");
+int quantity = orderInstance.getOrderitems().get(orderid).getQuantity();
+orderInstance.getOrderitems().get(orderid).setQuantity(quantity + 1);
+response.sendRedirect("order.jsp");
+%>

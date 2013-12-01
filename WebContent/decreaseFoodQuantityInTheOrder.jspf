@@ -1,0 +1,12 @@
+<jsp:useBean id="orderInstance" class="com.eggs.order.OrderInstance" scope="session" />
+
+<%
+String orderid = request.getParameter("deleteid");
+int quantity = orderInstance.getOrderitems().get(orderid).getQuantity();
+if(quantity == 1){
+    request.getRequestDispatcher("deleteFoodFromOrder.jspf").include(request, response);
+} else {
+    orderInstance.getOrderitems().get(orderid).setQuantity(quantity - 1);
+}
+response.sendRedirect("order.jsp");
+%>
