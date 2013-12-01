@@ -41,8 +41,8 @@
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
-        <li><a href="${baseUrl}addfood.jsp">Add Food</a></li>
-        <li><a href="${baseUrl}listfood.jsp">List Food</a></li>
+        <li><a href="${baseUrl}secret/addfood.jsp">Add Food</a></li>
+        <li><a href="${baseUrl}secret/listfood.jsp">List Food</a></li>
         <li><a href="${baseUrl}order.jsp">Order</a></li>
         <li><a href="${baseUrl}listorders.jsp">List Orders</a></li>
       </ul>
