@@ -1,0 +1,27 @@
+    id: 1
+    name: Ham & Eggs
+    price: 370
+---
+    id: 2
+    name: Omlette du Fromage
+    price: 480
+---
+    id: 3
+    name: Velos Pacal
+    price: 820
+---
+    id: 4
+    name: Rantotta
+    price: 470
+---
+    id: 5
+    name: Plain Pizza
+    price: 550
+---
+    id: 6
+    name: Grilled gorilla
+    price: 8890
+---
+    id: 7
+    name: Langusta
+    price: 1490
